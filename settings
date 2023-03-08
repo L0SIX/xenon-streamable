@@ -1,0 +1,69 @@
+getgenv().Xenon = {
+    Silent = {
+        Enabled = true,
+        Keybind = "L",
+        Prediction = 0.1247,
+        AutoPrediction = true,
+        Part = "Head",
+        HitChance = 100,
+        Resolver = true
+    },
+    Tracer = {
+        Enabled = true,
+        Keybind = "Q",
+        Smoothness = 0.0687,
+        Predict = false,
+        Prediction = 0.1243,
+        Part = "HumanoidRootPart",
+        NearestPart = true,
+        Shake = true,
+        ShakeValue = {X = 15, Y = 5, Z = 5},
+        Resolver = true
+    },
+    FOV = {
+        Silent = {
+            Enabled = false,
+            Radius = 20,
+            Color = Color3.fromRGB(0, 0, 0)
+        },
+        Tracer = {
+            Enabled = false,
+            Radius = 40,
+            Color = Color3.fromRGB(0, 0, 0)
+        }
+    },
+    Range = {
+        Enabled = true,
+        Type = {
+            FOV = true,
+            Prediction = false
+        },
+        Close = {
+            FOV = 25,
+            Prediction = 0.121
+        },
+        Mid = {
+            FOV = 17.5,
+            Prediction = 0.125
+        },
+        Far = {
+            FOV = 12.5,
+            Prediction = 0.129
+        },
+        VeryFar = {
+            FOV = 7.5,
+            Prediction = 0.132
+        }
+    },
+    Checks = {
+        Wall = {
+            Silent = true,
+            Tracer = true
+        },
+        Knocked = {
+            Silent = true,
+            Tracer = true
+        }
+    }
+}
+
